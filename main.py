@@ -396,8 +396,8 @@ def update():
         print_but_cooler(console, "Info", "Pulling changes from master branch[white]...[/white]", "bold cyan")
 
         if verbose:
-            print_but_cooler(console, "Info", f"Running \"cd {cwd}&&git pull https://github.com/SpookyDervish/SpookyShell.git main\"..", "bold cyan")
-        u = check_output(f'cd {cwd}&&git pull https://github.com/SpookyDervish/SpookyShell.git main', shell=True).decode('utf-8')
+            print_but_cooler(console, "Info", f"Running \"cd {cwd}&&git pull https://github.com/Code-King64/SpookyShellHarmless.git main\"..", "bold cyan")
+        u = check_output(f'cd {cwd}&&git pull https://github.com/Code-King64/SpookyShellHarmless.git main', shell=True).decode('utf-8')
         
         if re.search("Updating", u):
             if verbose:
@@ -412,11 +412,11 @@ def update():
             if verbose:
                 print_but_cooler(console, "Info", "Displaying error message..", "bold cyan")
             print_but_cooler(console, "Error", "Something went wrong. Are you running SpookyShell from your local git repository?", "bold red")
-            print_but_cooler(console, "Info", 'Consider running "git pull https://github.com/SpookyDervish/SpookyShell.git main" inside the project\'s directory.', "bold cyan")
+            print_but_cooler(console, "Info", 'Consider running "git pull https://github.com/Code-King64/SpookyShellHarmless.git main" inside the project\'s directory.', "bold cyan")
     except:
         if verbose:
             print_but_cooler(console, "Info", "Displaying error messsage..", "bold cyan")
-        print_but_cooler(console, "Error", 'Update failed. Consider running "git pull https://github.com/SpookyDervish/SpookyShell.git main" inside the project\'s directory.', "bold red")
+        print_but_cooler(console, "Error", 'Update failed. Consider running "git pull https://github.com/Code-King64/SpookyShellHarmless.git main" inside the project\'s directory.', "bold red")
 
     if updated:
         if verbose:
